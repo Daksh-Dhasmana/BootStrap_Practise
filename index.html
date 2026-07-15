@@ -2,30 +2,60 @@
 <html>
     <head>
        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    1 of 3
-                </div>
-                <div class="col-4">
-                    2 of 3
-                </div>
-                <div class="col-4">
-                    3 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    1 of 2
-                </div>
-                <div class="col-6">
-                    2 of 2
-                </div>
-            </div>
+            <table class="table table-bordered border-primary" style="border-width: 2px;">
+                <thead>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                </thead>
+                <tbody>
+                    <tr class="table-acrive">
+                        <td>daksh</td>
+                        <td>15</td>
+                        <td>10th</td>
+                    </tr>
+
+                    <tr class="table-success">
+                        <td>akash</td>
+                        <td>15</td>
+                        <td>10th</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="/image.jpg" alt="">
+            <a href="/image.jpg" download="strawberry.jpg">Click here to download this pic!!</a>
+            <p>Here are other fruits pic!</p>
+            <ul>
+                <li>Banana <a href="/images.jpeg" download="banana.jpeg">Download</a></li>
+                <li>Apple <a href="/apple.jpeg" download="banana.jpeg">Download</a></li>
+                <li>Lichi <a href="/lichi.jpeg" download="lichi.jpeg">Download</a></li>
+            </ul>
+            <p>Preview</p>
+            <table class="table table-bordered border-primary" style="border-width: 2px;">
+                <thead>
+                    <th>Name</th>
+                    <th>Preview</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td><img src="/apple.jpeg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td><img src="/images.jpeg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Lichi</td>
+                        <td><img src="/lichi.jpeg" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
