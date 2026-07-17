@@ -1,7 +1,17 @@
-.row {
-    border: solid 1px black;
-    margin-top: 50px;
-}
-[class*="col-"], .col {
-    border: solid 1px red;
-}
+
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Prevents double borders */
+        font-family: sans-serif;
+    }
+    
+    th, td {
+        border: 1px solid #cccccc; /* Adds the grid lines */
+        padding: 12px;             /* Gives the text breathing room */
+        text-align: left;          /* Aligns text nicely to the left */
+    }
+
+    th {
+        background-color: #f4f4f4; /* Gives the header a distinct background */
+        font-weight: bold;
+    }

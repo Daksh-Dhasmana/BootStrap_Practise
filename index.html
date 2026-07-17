@@ -1,61 +1,87 @@
-<! DOCTYPE html>
-<html>
-    <head>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="style.css" type="text/css" />
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Parts</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <table class="table table-bordered border-primary" style="border-width: 2px;">
-                <thead>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Class</th>
-                </thead>
-                <tbody>
-                    <tr class="table-acrive">
-                        <td>daksh</td>
-                        <td>15</td>
-                        <td>10th</td>
-                    </tr>
-
-                    <tr class="table-success">
-                        <td>akash</td>
-                        <td>15</td>
-                        <td>10th</td>
-                    </tr>
-                </tbody>
-            </table>
-            <img src="/image.jpg" alt="">
-            <a href="/image.jpg" download="strawberry.jpg">Click here to download this pic!!</a>
-            <p>Here are other fruits pic!</p>
-            <ul>
-                <li>Banana <a href="/images.jpeg" download="banana.jpeg">Download</a></li>
-                <li>Apple <a href="/apple.jpeg" download="banana.jpeg">Download</a></li>
-                <li>Lichi <a href="/lichi.jpeg" download="lichi.jpeg">Download</a></li>
-            </ul>
-            <p>Preview</p>
-            <table class="table table-bordered border-primary" style="border-width: 2px;">
-                <thead>
-                    <th>Name</th>
-                    <th>Preview</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Apple</td>
-                        <td><img src="/apple.jpeg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Banana</td>
-                        <td><img src="/images.jpeg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Lichi</td>
-                        <td><img src="/lichi.jpeg" alt=""></td>
-                    </tr>
-                </tbody>
-            </table>
+            <a class="navbar-brand" href="#">Computer Parts</a>
         </div>
-    </body>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="h4 mb-2">One-stop shop for computer parts</h1>
+        <p class="text-muted small">Click a part name to open its page, or use "Download" to save the file locally.</p>
+
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Part</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width:120px"><img src="imag/comp.webp" alt="parts" class="img-fluid rounded" /></td>
+                    <td><a href="cpu.html">CPU</a></td>
+                    <td>Processors, coolers and compatible motherboards.</td>
+                    <td>
+                        <a href="cpu.html" class="btn btn-sm btn-primary me-1">Open</a>
+                        <a href="cpu.html" download class="btn btn-sm btn-outline-secondary me-1">Download</a>
+                        <a href="imag/comp.webp" download class="btn btn-sm btn-outline-secondary">Image</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width:120px"><img src="imag/comp.webp" alt="keyboard" class="img-fluid rounded" /></td>
+                    <td><a href="key.html">Keyboard</a></td>
+                    <td>Mechanical and membrane keyboards.</td>
+                    <td>
+                        <a href="key.html" class="btn btn-sm btn-primary me-1">Open</a>
+                        <a href="key.html" download class="btn btn-sm btn-outline-secondary">Download</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width:120px"><img src="imag/comp.webp" alt="mouse" class="img-fluid rounded" /></td>
+                    <td><a href="mouse.html">Mouse</a></td>
+                    <td>Wired and wireless mice with various sensors.</td>
+                    <td>
+                        <a href="mouse.html" class="btn btn-sm btn-primary me-1">Open</a>
+                        <a href="mouse.html" download class="btn btn-sm btn-outline-secondary">Download</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width:120px"><img src="imag/comp.webp" alt="monitor" class="img-fluid rounded" /></td>
+                    <td><a href="monitor.html">Monitor</a></td>
+                    <td>LCD / LED monitors and accessories.</td>
+                    <td>
+                        <a href="monitor.html" class="btn btn-sm btn-primary me-1">Open</a>
+                        <a href="monitor.html" download class="btn btn-sm btn-outline-secondary">Download</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width:120px"><img src="imag/comp.webp" alt="form" class="img-fluid rounded" /></td>
+                    <td><a href="forma.html">Contact / Form</a></td>
+                    <td>Submit enquiries or download the form file.</td>
+                    <td>
+                        <a href="forma.html" class="btn btn-sm btn-primary me-1">Open</a>
+                        <a href="forma.html" download class="btn btn-sm btn-outline-secondary">Download</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="text-muted small">Simple Bootstrap layout — uses tables and download links only.</p>
+    </div>
+</body>
 </html>
